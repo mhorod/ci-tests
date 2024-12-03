@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Fetch main
-        run: git fetch origin main
+        run: git fetch
 
       - name: merge PR locally
         run: |
