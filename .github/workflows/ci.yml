@@ -17,6 +17,8 @@ jobs:
 
       - name: Fetch main
         run: |
+          git config --global user.email "example@example.com"
+          git config --global user.name "Example"
           git fetch origin main
           git fetch origin ${{ github.event.pull_request.head.ref }}
 
